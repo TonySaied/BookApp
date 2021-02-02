@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.extradesc">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/darklib">
+    <TextView
+        android:id="@+id/extra_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <ImageView
+        android:id="@+id/extra_pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/extra_title"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/extra_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/extra_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/extra_pic"
+            android:text="Year"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/extra_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/extra_year"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/extra_pic"
+            android:text="Rate"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp" />
+
+        <TextView
+        android:id="@+id/extra_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publisher"
+        android:textSize="20sp"
+        android:layout_below="@+id/extra_pic"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:id="@+id/extra_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:text="Description"
+        android:layout_below="@+id/extra_publisher"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"/>
+
+        <!--
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+
+        android:layout_below="@+id/extra_rate"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/heartbtn"/>
+-->
+    </RelativeLayout>
+</ScrollView>

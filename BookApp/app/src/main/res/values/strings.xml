@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BookApp</string>
+    <string-array name="sort">
+        <item></item>
+        <item>Sort by Rate</item>
+    </string-array>
+</resources>

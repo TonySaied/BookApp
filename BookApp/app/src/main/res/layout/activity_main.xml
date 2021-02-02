@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.MainActivity"
+     android:background="@drawable/galaxy">
+
+    <TextView
+        android:id="@+id/Choose_textView"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Choose Book Category"
+        android:textAllCaps="false" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Choose_textView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time" />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sport" />
+
+        <RadioButton
+            android:id="@+id/radio_three"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Life" />
+
+        <RadioButton
+            android:id="@+id/radio_four"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Love" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/ChoiceBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textSize="22sp"
+        android:text="Go to Books"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-black"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bluebtn"
+        android:layout_below="@+id/radioGroup"/>
+</RelativeLayout>
